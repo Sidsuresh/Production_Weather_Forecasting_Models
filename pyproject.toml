@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "36120_25SP_AT2"
+version = "0.0.1"
+description = "Repo for AT2"
+authors = [
+  { name = "Siddharth Nair" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.11.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["36120_25SP_AT2"]
+include = ["pyproject.toml", "36120_25SP_AT2/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["36120_25SP_AT2"]
+force-sort-within-sections = true
+
