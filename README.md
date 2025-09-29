@@ -26,7 +26,7 @@ Repo for AT2
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
+├── pyproject.toml     <- Project configuration file with package metadata for
 │                         36120_25SP_AT2 and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
@@ -49,13 +49,45 @@ Repo for AT2
     │
     ├── features.py             <- Code to create features for modeling
     │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
+    ├── modeling
+    │   ├── __init__.py
+    │   ├── predict.py          <- Code to run model inference with trained models
     │   └── train.py            <- Code to train models
     │
     └── plots.py                <- Code to create visualizations
 ```
 
---------
+---
 
+---
+
+# Project Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sidsuresh/36120_25SP_25548684_AT2
+cd 36120_25SP_AT2/
+```
+
+### 2. Install the dependencies using Poetry
+
+Make sure you have poetry installed on your system.
+
+```bash
+poetry install
+```
+
+### 3. Run the Jupyter Lab using Poetry
+
+```bash
+poetry run jupyter lab
+```
+
+### 4. Navigate to the following folders
+
+1. notebooks\ folder to view the 4 jupyter notebooks
+2. models\ folder to view the 4 models
+3. dataset\raw folder to view the train and test datasets
+4. dataset\processed folder to view the processed training and validation datasets for all 4 experiments.
+5. dataset\processed\25548684_submissions folder to view the submission.csv for all 4 experiments.
