@@ -1,8 +1,33 @@
-# Weather Forecasting Models
-
+# 🌦️ Sydney Weather Prediction Suite
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
+
+A full-stack machine learning application that provides localized weather forecasts for Sydney, Australia. The project utilizes a **FastAPI** backend for model inference and a **Streamlit** frontend for user interaction.
+
+---
+
+## 🚀 Deployed Link
+
+1. [Streamlit Community Cloud](https://syd-weather-forecast.streamlit.app/)
+2. [FastAPI hosting the ML Model](https://advmla-at2-25548684-latest.onrender.com/)
+
+---
+
+## Overview
+This project consists of two distinct machine learning experiments designed to solve different meteorological challenges using historical data from the Open-Meteo Archive API.
+
+### 1. Rain-or-Not (Classification)
+- **Objective**: Predict if it will rain exactly **7 days after** a given input date.
+- **Model**: Scikit-learn Pipeline (Experiment 1).
+- **Features**: Apparent temperature, humidity, cloud cover, sunshine duration, and wind metrics.
+
+### 2. Cumulative Precipitation (Regression)
+- **Objective**: Forecast the total **cumulative precipitation (mm)** over a 3-day (72-hour) window.
+- **Model**: Scikit-learn Pipeline (Experiment 2).
+- **Features**: Hourly data points including soil moisture, dew point, and cloud cover at various altitudes.
+
+---
 
 ## Project Organization
 
@@ -82,10 +107,8 @@ poetry install
 poetry run jupyter lab
 ```
 
-### 4. Navigate to the following folders
+### 4. Run the Streamlit App using Poetry
 
-1. notebooks\ folder to view the 4 jupyter notebooks
-2. models\ folder to view the 4 models
-3. dataset\raw folder to view the train and test datasets
-4. dataset\processed folder to view the processed training and validation datasets for all 4 experiments.
-5. dataset\processed\25548684_submissions folder to view the submission.csv for all 4 experiments.
+```bash
+poetry run streamlit run app/main.py
+```
