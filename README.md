@@ -1,10 +1,8 @@
-# 36120_25SP_25548684_AT2
+# Weather Forecasting Models
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
-
-Repo for AT2
 
 ## Project Organization
 
@@ -66,7 +64,7 @@ Repo for AT2
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Sidsuresh/36120_25SP_25548684_AT2
+git clone https://github.com/Sidsuresh/Production_Weather_Forecasting_Models.git
 cd 36120_25SP_AT2/
 ```
 
